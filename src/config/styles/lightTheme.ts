@@ -7,6 +7,7 @@ export const lightTheme: ThemeType = {
     text: LightColorType.text,
     background: LightColorType.background,
     accentBackground: LightColorType.accentBackground,
+    shadow: LightColorType.shadow,
   },
   ...baseTheme,
 };

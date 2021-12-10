@@ -2,7 +2,7 @@ import 'config/translations/i18n';
 import React from 'react';
 import { StatusBar } from 'react-native';
 
-import { isDarkMode } from 'lib';
+import { isDarkMode } from 'lib/device';
 import { ReactQueryClientProvider } from 'lib/wrappers';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 import { ThemeProvider } from 'styled-components/native';

@@ -7,6 +7,7 @@ export const darkTheme: ThemeType = {
     text: DarkColorType.text,
     background: DarkColorType.background,
     accentBackground: DarkColorType.accentBackground,
+    shadow: DarkColorType.shadow,
   },
   ...baseTheme,
 };

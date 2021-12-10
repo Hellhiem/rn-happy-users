@@ -1,1 +1,7 @@
-export const en = {};
+export const en = {
+  Screens: {
+    HomeScreen: {
+      headerTitle: 'Happy Users',
+    },
+  },
+};

@@ -1,10 +1,10 @@
 import React from 'react';
 
 import { storiesOf } from '@storybook/react-native';
-import { BaseContainer } from 'components';
 import styled from 'styled-components/native';
 
 import { UserTile } from '../';
+import { BaseContainer } from '../../Containers';
 
 const Container = styled(BaseContainer)`
   height: 300px;

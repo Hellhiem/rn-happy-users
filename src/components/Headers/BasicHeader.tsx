@@ -20,7 +20,7 @@ const Container = styled.View<ContainerPropsType>`
   height: 68px;
   background-color: ${({ theme }) => theme.colors.background};
   border-bottom-width: 1px;
-  border-bottom-color: ${({ theme }) => theme.colors.accentBackground};
+  border-bottom-color: ${({ theme }) => theme.colors.inverted};
   padding-horizontal: 16px;
   margin-top: ${isAndroid() ? StatusBar.currentHeight : 0}px;
 `;

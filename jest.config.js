@@ -8,7 +8,6 @@ module.exports = {
     },
   },
   preset: 'react-native',
-  setupFilesAfterEnv: ['<rootDir>/testSetup.js', '@testing-library/jest-native/extend-expect'],
   testPathIgnorePatterns: ['/node_modules/', '(/__tests__/*.|\\e2e)\\.(ts|tsx|js)$'],
   transform: {
     ...tsjPreset.transform,

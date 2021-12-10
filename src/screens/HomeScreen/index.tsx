@@ -3,6 +3,7 @@ import { FlatList, ListRenderItem } from 'react-native';
 
 import { BaseContainer, BasicHeader, LoadingIndicator, UserDetailsPopup, UserTile } from 'components';
 import { i18n } from 'config/translations';
+import { formatUserDateOfBirth } from 'lib/helpers';
 import { AlertService } from 'lib/services';
 import { useMutation } from 'react-query';
 import { getUsersService } from 'services/user';
@@ -88,7 +89,7 @@ export const HomeScreen = () => {
         <UserDetailsPopup
           isVisible={isUserDetailsVisible}
           email={selectedUserData?.email}
-          dateOfBirth={selectedUserData?.dob.date}
+          dateOfBirth={formatUserDateOfBirth(selectedUserData?.dob.date)}
           gender={selectedUserData?.gender}
           city={selectedUserData?.location.city}
           coordinates={selectedUserData?.location.coordinates}

@@ -4,7 +4,7 @@ export enum LightColorType {
   accentBackground = '#ffffff',
   shadow = '#061835',
   inverted = '#212121',
-  modalBackground = 'rgba(0, 0, 0, 0.2)',
+  modalBackground = 'rgba(0, 0, 0, 0.5)',
 }
 
 export enum DarkColorType {
@@ -13,7 +13,7 @@ export enum DarkColorType {
   accentBackground = '#3c4042',
   shadow = '#000000',
   inverted = '#ffffff',
-  modalBackground = 'rgba(0, 0, 0, 0.5)',
+  modalBackground = 'rgba(255, 255, 255, 0.5)',
 }
 
 export type ColorType = {

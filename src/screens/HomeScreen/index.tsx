@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { FlatList, ListRenderItem, Text } from 'react-native';
+import { FlatList, ListRenderItem } from 'react-native';
 
 import { BaseContainer, BasicHeader, LoadingIndicator, UserDetailsPopup, UserTile } from 'components';
 import { i18n } from 'config/translations';
@@ -40,8 +40,10 @@ export const HomeScreen = () => {
   };
 
   const dismissUserDetails = () => {
-    setSelectedUserData(null);
     setIsUserDetailsVisible(false);
+    setTimeout(() => {
+      setSelectedUserData(null);
+    }, 200);
   };
 
   const renderItem: ListRenderItem<UserType> = ({ item }) => {

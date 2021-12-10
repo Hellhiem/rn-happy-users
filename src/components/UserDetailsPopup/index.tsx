@@ -1,11 +1,12 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 import { LocationPreview } from 'components/LocationPreview';
 import { i18n } from 'config/translations';
+import Animated, { useSharedValue, useAnimatedStyle, withTiming } from 'react-native-reanimated';
 import styled from 'styled-components/native';
 import { CoordinatesType } from 'types';
 
-import { BaseContainer } from '../Containers';
+import { AccentContainer, BaseContainer } from '../Containers';
 import { KeyData } from '../KeyData';
 import { Header2 } from '../Typography';
 
@@ -22,8 +23,7 @@ const Container = styled(BaseContainer)`
   right: 0;
 `;
 
-const ContentContainer = styled.View`
-  background-color: white;
+const ContentContainer = styled(AccentContainer)`
   padding: 16px;
   width: 100%;
   border-radius: 16px;
@@ -44,6 +44,8 @@ type PropsType = {
   isVisible?: boolean;
 };
 
+const animationDuration = 200;
+
 export const UserDetailsPopup = ({
   email,
   dateOfBirth,
@@ -52,9 +54,23 @@ export const UserDetailsPopup = ({
   coordinates,
   isVisible,
 }: PropsType) => {
-  return isVisible ? (
+  const scaleProgress = useSharedValue(0);
+
+  const reanimatedStyles = useAnimatedStyle(() => {
+    return {
+      transform: [{ scale: scaleProgress.value }],
+    };
+  }, []);
+
+  useEffect(() => {
+    isVisible
+      ? (scaleProgress.value = withTiming(1, { duration: animationDuration }))
+      : (scaleProgress.value = withTiming(0, { duration: animationDuration }));
+  }, [isVisible]);
+
+  return (
     <Container>
-      <ContentContainer>
+      <ContentContainer style={reanimatedStyles} as={Animated.View}>
         <Header2>{i18n.t(`${baseTranslationPath}basicInfo`)}</Header2>
         <KeyData dataKey={i18n.t(`${baseTranslationPath}email`)} value={email} />
         <KeyData dataKey={i18n.t(`${baseTranslationPath}dataOfBirth`)} value={dateOfBirth} />
@@ -66,7 +82,5 @@ export const UserDetailsPopup = ({
         </LocationContainer>
       </ContentContainer>
     </Container>
-  ) : (
-    <></>
   );
 };

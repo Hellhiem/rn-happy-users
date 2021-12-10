@@ -3,9 +3,10 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
+    "start": "yarn && cd ios && pod install && cd ../ && react-native start --reset-cache",
+    "just-start": "react-native start --reset-cache",
     "android": "react-native run-android",
     "ios": "react-native run-ios",
-    "start": "react-native start",
     "test": "jest --env=jsdom --updateSnapshot --silent",
     "test:clear": "jest --clearCache",
     "test:coverage": "yarn test --coverage",

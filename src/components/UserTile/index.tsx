@@ -13,6 +13,7 @@ const Container = styled(AccentContainer)`
   flex-direction: row;
   shadow-color: ${({ theme }) => theme.colors.shadow};
   border-radius: 8px;
+  margin-horizontal: 16px;
 `;
 
 const UserImage = styled.Image`

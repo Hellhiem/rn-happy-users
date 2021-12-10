@@ -8,7 +8,6 @@ import { BaseContainer } from '../../Containers';
 
 const Container = styled(BaseContainer)`
   height: 300px;
-  padding: 16px;
 `;
 
 storiesOf('UserTile', module).add('withDefaultLook', () => (

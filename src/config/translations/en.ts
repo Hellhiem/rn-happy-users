@@ -4,4 +4,8 @@ export const en = {
       headerTitle: 'Happy Users',
     },
   },
+  Common: {
+    ok: 'Ok',
+    somethingWentWrong: 'Something went wrong',
+  },
 };

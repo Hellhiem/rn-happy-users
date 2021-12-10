@@ -9,3 +9,5 @@ export * from './StreetType';
 export * from './TimezoneType';
 export * from './UserNameType';
 export * from './UserType';
+export * from './InfoType';
+export * from './responses';

@@ -1,7 +1,12 @@
-import React from 'react';
+import React, { Suspense } from 'react';
+import { View } from 'react-native';
 
-import StorybookUIRoot from '../../../storybook';
+const StorybookUIRoot = React.lazy(() => import('../../../storybook'));
 
-export const StorybookScreen = () => {
-  return <StorybookUIRoot />;
+export const StorybookScreen: React.FC = () => {
+  return (
+    <Suspense fallback={<View />}>
+      <StorybookUIRoot />
+    </Suspense>
+  );
 };

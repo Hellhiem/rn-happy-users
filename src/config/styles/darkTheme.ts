@@ -9,6 +9,7 @@ export const darkTheme: ThemeType = {
     accentBackground: DarkColorType.accentBackground,
     shadow: DarkColorType.shadow,
     inverted: DarkColorType.inverted,
+    modalBackground: DarkColorType.modalBackground,
   },
   ...baseTheme,
 };

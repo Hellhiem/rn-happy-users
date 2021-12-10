@@ -36,7 +36,15 @@
 		</dict>
 	</dict>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string/>
+	<string></string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Rubik-Bold.otf</string>
+		<string>Rubik-Light.otf</string>
+		<string>Rubik-Medium.otf</string>
+		<string>Rubik-Regular.otf</string>
+		<string>Rubik-SemiBold.otf</string>
+	</array>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIRequiredDeviceCapabilities</key>
@@ -51,13 +59,5 @@
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
-	<key>UIAppFonts</key>
-	<array>
-		<string>Rubik-Bold.otf</string>
-		<string>Rubik-Light.otf</string>
-		<string>Rubik-Medium.otf</string>
-		<string>Rubik-Regular.otf</string>
-		<string>Rubik-SemiBold.otf</string>
-	</array>
 </dict>
 </plist>

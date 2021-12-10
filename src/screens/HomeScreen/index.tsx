@@ -15,7 +15,7 @@ const Container = styled(BaseContainer)`
   padding-vertical: 16px;
 `;
 
-const TouchableUserItem = styled.TouchableOpacity`
+const TouchableUserItem = styled.Pressable`
   margin-bottom: 16px;
 `;
 

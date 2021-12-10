@@ -42,17 +42,17 @@
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = happyUsers/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = happyUsers/main.m; sourceTree = "<group>"; };
 		1D0AE47A65C8663E3B452821 /* Pods-happyUsers-happyUsersTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-happyUsers-happyUsersTests.release.xcconfig"; path = "Target Support Files/Pods-happyUsers-happyUsersTests/Pods-happyUsers-happyUsersTests.release.xcconfig"; sourceTree = "<group>"; };
-		349F0A52A7354F37B80ED8A7 /* Rubik-Light.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Rubik-Light.otf"; path = "../src/assets/fonts/Rubik-Light.otf"; sourceTree = "<group>"; };
+		349F0A52A7354F37B80ED8A7 /* Rubik-Light.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Rubik-Light.otf"; path = "../src/assets/fonts/Rubik-Light.otf"; sourceTree = "<group>"; };
 		6423831EA8574132BED9D8CC /* libPods-happyUsers.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-happyUsers.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C97AB639B58BBB4B15BBE30 /* Pods-happyUsers-happyUsersTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-happyUsers-happyUsersTests.debug.xcconfig"; path = "Target Support Files/Pods-happyUsers-happyUsersTests/Pods-happyUsers-happyUsersTests.debug.xcconfig"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = happyUsers/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		A2B1D1BA94F0475EA55FE11A /* Rubik-Bold.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Rubik-Bold.otf"; path = "../src/assets/fonts/Rubik-Bold.otf"; sourceTree = "<group>"; };
+		A2B1D1BA94F0475EA55FE11A /* Rubik-Bold.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Rubik-Bold.otf"; path = "../src/assets/fonts/Rubik-Bold.otf"; sourceTree = "<group>"; };
 		ABFE59519B596E51CEFDCCC0 /* libPods-happyUsers-happyUsersTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-happyUsers-happyUsersTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B75CAD1240E747C28F12AA48 /* Rubik-Medium.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Rubik-Medium.otf"; path = "../src/assets/fonts/Rubik-Medium.otf"; sourceTree = "<group>"; };
+		B75CAD1240E747C28F12AA48 /* Rubik-Medium.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Rubik-Medium.otf"; path = "../src/assets/fonts/Rubik-Medium.otf"; sourceTree = "<group>"; };
 		C0A881CF5CF3F2B244570E2A /* Pods-happyUsers.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-happyUsers.debug.xcconfig"; path = "Target Support Files/Pods-happyUsers/Pods-happyUsers.debug.xcconfig"; sourceTree = "<group>"; };
-		C95C4DE42BCB4D888E689FF0 /* Rubik-SemiBold.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Rubik-SemiBold.otf"; path = "../src/assets/fonts/Rubik-SemiBold.otf"; sourceTree = "<group>"; };
+		C95C4DE42BCB4D888E689FF0 /* Rubik-SemiBold.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Rubik-SemiBold.otf"; path = "../src/assets/fonts/Rubik-SemiBold.otf"; sourceTree = "<group>"; };
 		D00AAFFCFCFDA5787532823F /* Pods-happyUsers.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-happyUsers.release.xcconfig"; path = "Target Support Files/Pods-happyUsers/Pods-happyUsers.release.xcconfig"; sourceTree = "<group>"; };
-		D0784713B377435FA71B9346 /* Rubik-Regular.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Rubik-Regular.otf"; path = "../src/assets/fonts/Rubik-Regular.otf"; sourceTree = "<group>"; };
+		D0784713B377435FA71B9346 /* Rubik-Regular.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Rubik-Regular.otf"; path = "../src/assets/fonts/Rubik-Regular.otf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -103,7 +103,6 @@
 				C95C4DE42BCB4D888E689FF0 /* Rubik-SemiBold.otf */,
 			);
 			name = Resources;
-			path = "";
 			sourceTree = "<group>";
 		};
 		13B07FAE1A68108700A75B9A /* happyUsers */ = {
@@ -169,7 +168,6 @@
 				6C97AB639B58BBB4B15BBE30 /* Pods-happyUsers-happyUsersTests.debug.xcconfig */,
 				1D0AE47A65C8663E3B452821 /* Pods-happyUsers-happyUsersTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -525,7 +523,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.happyUsers;
 				PRODUCT_NAME = happyUsers;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -550,7 +548,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.happyUsers;
 				PRODUCT_NAME = happyUsers;
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";

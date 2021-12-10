@@ -17,5 +17,6 @@ storiesOf('UserDetailsPopup', module).add('withDefaultLook', () => (
     gender="female"
     city="Amsterdam"
     coordinates={coordinates}
+    isVisible
   />
 ));

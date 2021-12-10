@@ -15,6 +15,11 @@ const Container = styled(BaseContainer)`
   flex: 1;
   justify-content: center;
   align-items: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 `;
 
 const ContentContainer = styled.View`
@@ -36,10 +41,18 @@ type PropsType = {
   gender: string;
   city: string;
   coordinates: CoordinatesType;
+  isVisible?: boolean;
 };
 
-export const UserDetailsPopup = ({ email, dateOfBirth, gender, city, coordinates }: PropsType) => {
-  return (
+export const UserDetailsPopup = ({
+  email,
+  dateOfBirth,
+  gender,
+  city,
+  coordinates,
+  isVisible,
+}: PropsType) => {
+  return isVisible ? (
     <Container>
       <ContentContainer>
         <Header2>{i18n.t(`${baseTranslationPath}basicInfo`)}</Header2>
@@ -53,5 +66,7 @@ export const UserDetailsPopup = ({ email, dateOfBirth, gender, city, coordinates
         </LocationContainer>
       </ContentContainer>
     </Container>
+  ) : (
+    <></>
   );
 };

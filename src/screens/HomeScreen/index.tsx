@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { FlatList, ListRenderItem, Text } from 'react-native';
 
-import { AccentContainer, BaseContainer, BasicHeader, LoadingIndicator, UserTile } from 'components';
+import { BaseContainer, BasicHeader, LoadingIndicator, UserDetailsPopup, UserTile } from 'components';
 import { i18n } from 'config/translations';
 import { AlertService } from 'lib/services';
 import { useMutation } from 'react-query';
@@ -22,6 +22,8 @@ const TouchableUserItem = styled.Pressable`
 export const HomeScreen = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const [usersData, setUsersData] = useState<UserType[] | []>([]);
+  const [selectedUserData, setSelectedUserData] = useState<UserType | null>(null);
+  const [isUserDetailsVisible, setIsUserDetailsVisible] = useState(false);
 
   const fetchUsersMutation = useMutation((page: number) => getUsersService(page), {
     onSuccess: (data) => {
@@ -32,11 +34,21 @@ export const HomeScreen = () => {
     },
   });
 
+  const displayUserDetails = (userData: UserType) => {
+    setSelectedUserData(userData);
+    setIsUserDetailsVisible(true);
+  };
+
+  const dismissUserDetails = () => {
+    setSelectedUserData(null);
+    setIsUserDetailsVisible(false);
+  };
+
   const renderItem: ListRenderItem<UserType> = ({ item }) => {
     const userName = `${item.name.first} ${item.name.last}`;
 
     return (
-      <TouchableUserItem>
+      <TouchableUserItem onLongPress={() => displayUserDetails(item)} onPressOut={dismissUserDetails}>
         <UserTile userName={userName} phoneNumber={item.cell} userImageUrl={item.picture.medium} />
       </TouchableUserItem>
     );
@@ -70,6 +82,16 @@ export const HomeScreen = () => {
         onEndReached={onEndReached}
         keyExtractor={getKeyExtractor}
       />
+      {selectedUserData && (
+        <UserDetailsPopup
+          isVisible={isUserDetailsVisible}
+          email={selectedUserData?.email}
+          dateOfBirth={selectedUserData?.dob.date}
+          gender={selectedUserData?.gender}
+          city={selectedUserData?.location.city}
+          coordinates={selectedUserData?.location.coordinates}
+        />
+      )}
     </Container>
   );
 };

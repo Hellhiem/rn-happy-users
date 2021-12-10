@@ -1,9 +1,10 @@
 import React from 'react';
 
 import styled from 'styled-components/native';
-import { ColorType } from 'types';
 
-const Container = styled.View`
+import { BaseContainer } from '../Containers';
+
+const Container = styled(BaseContainer)`
   padding: 16px;
   justify-content: center;
   align-items: center;

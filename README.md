@@ -108,4 +108,4 @@ This `import/export` method is called `Barrel` to read more about it: [Barrel Me
 
 ## <u>Known Hacks</u>
 
-`HomeScreen` line `35` is a little hack to see the press out animation that is triggered in `UserDetailsPopup`
+- `HomeScreen` line `35` is a little hack to see the press out animation that is triggered in `UserDetailsPopup`

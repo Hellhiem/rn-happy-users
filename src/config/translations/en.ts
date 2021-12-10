@@ -13,6 +13,9 @@ export const en = {
       basicInfo: 'Basic Info',
       currentLocation: 'Current Location:',
     },
+    UserTile: {
+      phoneNumber: 'Phone Number:',
+    },
   },
   Common: {
     ok: 'Ok',

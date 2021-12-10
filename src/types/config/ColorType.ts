@@ -3,6 +3,7 @@ export enum LightColorType {
   background = '#ffffff',
   accentBackground = '#ffffff',
   shadow = '#061835',
+  inverted = '#212121',
 }
 
 export enum DarkColorType {
@@ -10,6 +11,7 @@ export enum DarkColorType {
   background = '#121212',
   accentBackground = '#3c4042',
   shadow = '#000000',
+  inverted = '#ffffff',
 }
 
 export type ColorType = {
@@ -17,4 +19,5 @@ export type ColorType = {
   background: LightColorType.background | DarkColorType.background;
   accentBackground: LightColorType.accentBackground | DarkColorType.accentBackground;
   shadow: LightColorType.shadow | DarkColorType.shadow;
+  inverted: LightColorType.inverted | DarkColorType.inverted;
 };

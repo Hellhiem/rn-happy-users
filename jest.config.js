@@ -1,5 +1,5 @@
 // eslint-disable-next-line @typescript-eslint/no-var-requires
-const {defaults: tsjPreset} = require('ts-jest/presets');
+const { defaults: tsjPreset } = require('ts-jest/presets');
 
 module.exports = {
   globals: {
@@ -8,14 +8,8 @@ module.exports = {
     },
   },
   preset: 'react-native',
-  setupFilesAfterEnv: [
-    '<rootDir>/testSetup.js',
-    '@testing-library/jest-native/extend-expect',
-  ],
-  testPathIgnorePatterns: [
-    '/node_modules/',
-    '(/__tests__/*.|\\e2e)\\.(ts|tsx|js)$',
-  ],
+  setupFilesAfterEnv: ['<rootDir>/testSetup.js', '@testing-library/jest-native/extend-expect'],
+  testPathIgnorePatterns: ['/node_modules/', '(/__tests__/*.|\\e2e)\\.(ts|tsx|js)$'],
   transform: {
     ...tsjPreset.transform,
     '\\.js$': '<rootDir>/node_modules/react-native/jest/preprocessor.js',

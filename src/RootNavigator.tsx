@@ -10,7 +10,7 @@ const Stack = createStackNavigator<RootStackParams>();
 export const RootNavigator: React.FC = () => {
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName={Route.HomeScreen}>
+      <Stack.Navigator initialRouteName={Route.Storybook}>
         <Stack.Group>
           <Stack.Screen name={Route.HomeScreen} component={HomeScreen} />
           <Stack.Screen name={Route.Storybook} component={StorybookScreen} />

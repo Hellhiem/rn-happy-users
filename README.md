@@ -1,6 +1,27 @@
 # Happy Users App
 
+## <u>Project description</u>
+
+Displays infinite list of users in scrollable list, when long press on user tile we would se more details and current user position displayed on map.
+
+<b>Notice:</b>
+
+- App handles light and dark mode
+- Gives a possibility to check storybook with all component states from header.
+
 ## <u>How to run project</u>
+
+### Before you start
+
+Create a `.env` file in root folder and pass down this content:
+
+```
+API_URL=https://randomuser.me/
+GOOGLE_MAPS_ANDROID_API_KEY= // Your own API key for maps
+GOOGLE_MAPS_IOS_API_KEY= // Your own API key for maps
+```
+
+API keys can be retrieved from google cloud platform. More details in [React Native Maps Docs](https://github.com/react-native-maps/react-native-maps/blob/master/docs/installation.md)
 
 ### Run project:
 

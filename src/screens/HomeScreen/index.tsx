@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { memo, useEffect, useState } from 'react';
 import { FlatList, ListRenderItem } from 'react-native';
 
 import { BaseContainer, BasicHeader, LoadingIndicator, UserDetailsPopup, UserTile } from 'components';
@@ -20,7 +20,7 @@ const TouchableUserItem = styled.Pressable`
   margin-bottom: 16px;
 `;
 
-export const HomeScreen = () => {
+export const HomeScreen = memo(() => {
   const [currentPage, setCurrentPage] = useState(1);
   const [usersData, setUsersData] = useState<UserType[] | []>([]);
   const [selectedUserData, setSelectedUserData] = useState<UserType | null>(null);
@@ -41,9 +41,8 @@ export const HomeScreen = () => {
   };
 
   const dismissUserDetails = () => {
-    setIsUserDetailsVisible(false);
     setTimeout(() => {
-      setSelectedUserData(null);
+      setIsUserDetailsVisible(false);
     }, 200);
   };
 
@@ -85,19 +84,19 @@ export const HomeScreen = () => {
         onEndReached={onEndReached}
         keyExtractor={getKeyExtractor}
       />
-      {selectedUserData && (
+      {isUserDetailsVisible && selectedUserData && (
         <UserDetailsPopup
           isVisible={isUserDetailsVisible}
-          email={selectedUserData?.email}
-          dateOfBirth={formatUserDateOfBirth(selectedUserData?.dob.date)}
-          gender={selectedUserData?.gender}
-          city={selectedUserData?.location.city}
-          coordinates={selectedUserData?.location.coordinates}
+          email={selectedUserData.email}
+          dateOfBirth={formatUserDateOfBirth(selectedUserData.dob.date)}
+          gender={selectedUserData.gender}
+          city={selectedUserData.location.city}
+          coordinates={selectedUserData.location.coordinates}
         />
       )}
     </Container>
   );
-};
+});
 
 export const homeScreenOptions = () => {
   const header = () => <BasicHeader title={i18n.t(`${baseTranslationPath}headerTitle`)} />;

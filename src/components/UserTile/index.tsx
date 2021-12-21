@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { memo } from 'react';
 import { TouchableOpacity } from 'react-native';
 
 import { i18n } from 'config/translations';
@@ -54,7 +54,7 @@ type PropsType = {
 
 const baseTranslationPath = 'Components:UserTile:';
 
-export const UserTile = ({ userImageUrl, userName, phoneNumber }: PropsType) => {
+export const UserTile = memo(({ userImageUrl, userName, phoneNumber }: PropsType) => {
   return (
     <Container style={shadowBoxStyle}>
       <UserImage source={{ uri: userImageUrl }} />
@@ -69,4 +69,4 @@ export const UserTile = ({ userImageUrl, userName, phoneNumber }: PropsType) => 
       </RightInfoContainer>
     </Container>
   );
-};
+});

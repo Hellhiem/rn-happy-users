@@ -1,7 +1,12 @@
-import { queryGet } from 'services/apiMethods';
+import { genericAxiosService } from 'services/genericAxiosService';
 import { GetUsersResponse } from 'types';
 
 import { fetchUserEndpoint } from './endpoints';
 
 export const getUsersService = (page: number, results = 20) =>
-  queryGet<GetUsersResponse>(fetchUserEndpoint, { page, results });
+  genericAxiosService<GetUsersResponse>('GET', fetchUserEndpoint, {
+    params: {
+      page,
+      results,
+    },
+  });
